@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cw.rubickcube.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/soja"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F44336"
+        android:onClick="start"
+
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="390dp">
+
+        <TextView
+            android:id="@+id/abc"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="changecolor"
+            android:text="00:00:00"
+            android:textColor="#000"
+
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="19dp"
+            android:text="3x3x3"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abc"
+            android:layout_centerHorizontal="true"
+            android:padding="8sp"
+            android:text="F R2 U2 B2 D2 U R U' " />
+
+        <TextView
+            android:id="@+id/sa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/below"
+            android:layout_centerHorizontal="true"
+            android:padding="8sp"
+            android:text="press and release to start" />
+
+        <Button
+            android:id="@+id/start1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/start1"
+            android:layout_alignBottom="@+id/start1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#00FFFFFF"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/first"
+            android:layout_alignBottom="@+id/first"
+            android:layout_toLeftOf="@+id/sa"
+            android:layout_toStartOf="@+id/sa"
+            android:text="first:" />
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/below"
+            android:layout_alignStart="@+id/below"
+            android:layout_below="@+id/sa"
+            android:layout_marginTop="54dp"
+            android:text="sddsdsdsds" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
